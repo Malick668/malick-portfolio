@@ -25,17 +25,32 @@ export default function Navbar() {
   </a>
 </li>
 
-          <li className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">
-            Compétences
-          </li>
+          <li>
+  <a
+    href="#skills"
+    className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600"
+  >
+    Compétences
+  </a>
+</li>
 
-          <li className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">
-            Projets
-          </li>
+          <li>
+  <a
+    href="#projects"
+    className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600"
+  >
+    Projets
+  </a>
+</li>
 
-          <li className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600">
-            Contact
-          </li>
+          <li>
+  <a
+    href="#contact"
+    className="cursor-pointer rounded-md px-3 py-2 transition-all duration-300 hover:bg-blue-50 hover:text-blue-600"
+  >
+    Contact
+  </a>
+</li>
         </ul>
       </div>
     </nav>
