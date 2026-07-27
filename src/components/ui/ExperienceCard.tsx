@@ -1,4 +1,7 @@
 import { Experience } from "@/data/experiences";
+import { HiOutlineMapPin } from "react-icons/hi2";
+import { HiCheckCircle } from "react-icons/hi2";
+import { HiOutlineCalendarDays } from "react-icons/hi2";
 
 interface ExperienceCardProps {
   experience: Experience;
@@ -28,19 +31,21 @@ export default function ExperienceCard({
             </p>
           </div>
 
-          <span className="rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-600">
-            {experience.period}
-          </span>
+          <div className="flex items-center gap-2 rounded-full bg-slate-100 px-4 py-2 text-sm text-slate-600">
+  <HiOutlineCalendarDays />
+  <span>{experience.period}</span>
+</div>
         </div>
 
-        <p className="mt-2 text-slate-500">
-          📍 {experience.location}
-        </p>
+        <div className="mt-2 flex items-center gap-2 text-slate-500">
+  <HiOutlineMapPin className="text-blue-600" />
+  <span>{experience.location}</span>
+</div>
 
         <ul className="mt-6 space-y-2">
           {experience.description.map((item) => (
             <li key={item} className="flex gap-2 text-slate-600">
-              <span className="text-blue-600">✓</span>
+              <HiCheckCircle className="mt-1 text-blue-600" />
               {item}
             </li>
           ))}

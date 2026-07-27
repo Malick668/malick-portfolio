@@ -22,12 +22,13 @@ export default function Experience() {
 
         {/* Nombre d'expériences */}
         <div className="mx-auto mt-16 max-w-4xl space-y-12">
-  {experiences.map((experience) => (
-    <ExperienceCard
-      key={experience.id}
-      experience={experience}
-    />
-  ))}
+  {experiences.map((experience, index) => (
+  <ExperienceCard
+    key={experience.id}
+    experience={experience}
+    isLast={index === experiences.length - 1}
+  />
+))}
 </div>
       </div>
     </section>
