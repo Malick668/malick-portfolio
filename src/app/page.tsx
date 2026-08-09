@@ -6,18 +6,21 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
 import CaseStudies from "@/components/sections/CaseStudies";
+
 export default function Home() {
   return (
     <>
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <CaseStudies />
-      <Experience />
-      <Education />
-      
+
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Education />
+        <Projects />
+        <CaseStudies />
+      </main>
     </>
   );
 }

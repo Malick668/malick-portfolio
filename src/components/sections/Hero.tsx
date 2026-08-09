@@ -1,73 +1,78 @@
 export default function Hero() {
   return (
     <section
-  id="home"
-  className="bg-slate-50 pt-36 pb-24"
->
+      id="home"
+      className="bg-slate-50 py-24"
+    >
       <div className="mx-auto max-w-7xl px-6 text-center">
 
+        {/* Disponibilité */}
         <div className="mb-8">
-  <span className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700">
-    🟢 Disponible pour une alternance
-  </span>
-</div>
+          <span className="inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-700">
+            <span className="h-3 w-3 rounded-full bg-green-500" />
+            Disponible pour une alternance
+          </span>
+        </div>
 
+        {/* Avatar */}
         <div className="mx-auto mb-8 flex h-40 w-40 items-center justify-center rounded-full bg-blue-100 text-6xl">
           👨🏾‍💻
         </div>
 
-        <h1 className="mb-4 text-6xl font-extrabold text-gray-900">
+        {/* Nom */}
+        <h1 className="mb-4 text-5xl font-extrabold text-gray-900 md:text-6xl">
           Malick FAYE
         </h1>
 
-        <h2 className="mb-6 text-2xl font-semibold text-blue-600">
+        {/* Titre */}
+        <h2 className="mb-6 text-xl font-semibold text-blue-600 md:text-2xl">
           Data Analyst | Business Intelligence | Machine Learning
         </h2>
 
-        <p className="mx-auto mb-10 max-w-3xl text-xl leading-8 text-gray-600">
+        {/* Description */}
+        <p className="mx-auto mb-10 max-w-3xl text-lg leading-8 text-gray-600 md:text-xl">
           Je transforme les données en informations exploitables grâce
-          à l'analyse statistique, la Business Intelligence et le
-          Machine Learning afin d'aider les entreprises à prendre de
+          à l&apos;analyse statistique, la Business Intelligence et le
+          Machine Learning afin d&apos;aider les entreprises à prendre de
           meilleures décisions.
         </p>
 
-        <div className="flex justify-center gap-6">
-          <button className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white hover:bg-blue-700">
+        {/* Boutons */}
+        <div className="flex flex-col justify-center gap-4 sm:flex-row">
+          <a
+            href="#projects"
+            className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition hover:bg-blue-700"
+          >
             Voir mes projets
-          </button>
+          </a>
 
-          <button className="rounded-lg border border-blue-600 px-8 py-4 font-semibold text-blue-600 hover:bg-blue-50">
+          <a
+            href="/cv.pdf"
+            download
+            className="rounded-lg border border-blue-600 px-8 py-4 font-semibold text-blue-600 transition hover:bg-blue-50"
+          >
             Télécharger mon CV
-          </button>
+          </a>
         </div>
 
+        {/* Technologies principales */}
         <div className="mt-12 flex flex-wrap justify-center gap-3">
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    Python
-  </span>
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    SQL
-  </span>
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    Power BI
-  </span>
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    Tableau
-  </span>
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    Machine Learning
-  </span>
-
-  <span className="rounded-full bg-white px-4 py-2 shadow">
-    Talend ETL
-  </span>
-
-</div>
+          {[
+            "Python",
+            "SQL",
+            "Power BI",
+            "Tableau",
+            "Machine Learning",
+            "Talend ETL",
+          ].map((technology) => (
+            <span
+              key={technology}
+              className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm"
+            >
+              {technology}
+            </span>
+          ))}
+        </div>
 
       </div>
     </section>
