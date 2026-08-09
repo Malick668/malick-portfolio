@@ -6,6 +6,7 @@ import Projects from "@/components/sections/Projects";
 import Experience from "@/components/sections/Experience";
 import Education from "@/components/sections/Education";
 import CaseStudies from "@/components/sections/CaseStudies";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <Education />
         <Projects />
         <CaseStudies />
+        <Contact />
       </main>
     </>
   );
