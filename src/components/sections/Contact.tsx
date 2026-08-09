@@ -1,4 +1,49 @@
+"use client";
+
+import { FormEvent, useState } from "react";
+
 export default function Contact() {
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+
+    setStatus("Envoi en cours...");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        setStatus(data.error || "Une erreur est survenue.");
+        return;
+      }
+
+      setStatus("Message envoyé avec succès !");
+      form.reset();
+    } catch {
+      setStatus("Impossible d'envoyer le message.");
+    }
+  };
+
   return (
     <section id="contact" className="bg-slate-50 py-24">
       <div className="mx-auto max-w-7xl px-6">
@@ -87,8 +132,12 @@ export default function Contact() {
               Envoyer un message
             </h3>
 
-            <form className="mt-6 space-y-5">
+            <form
+              onSubmit={handleSubmit}
+              className="mt-6 space-y-5"
+            >
 
+              {/* Nom */}
               <div>
                 <label
                   htmlFor="name"
@@ -99,12 +148,15 @@ export default function Contact() {
 
                 <input
                   id="name"
+                  name="name"
                   type="text"
                   placeholder="Votre nom"
+                  required
                   className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
+              {/* Email */}
               <div>
                 <label
                   htmlFor="email"
@@ -115,12 +167,15 @@ export default function Contact() {
 
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   placeholder="votre@email.com"
+                  required
                   className="w-full rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
+              {/* Message */}
               <div>
                 <label
                   htmlFor="message"
@@ -131,18 +186,28 @@ export default function Contact() {
 
                 <textarea
                   id="message"
+                  name="message"
                   rows={5}
                   placeholder="Votre message..."
+                  required
                   className="w-full resize-none rounded-xl border border-slate-300 px-4 py-3 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
                 />
               </div>
 
+              {/* Bouton */}
               <button
                 type="submit"
                 className="w-full rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white transition hover:bg-blue-700"
               >
                 Envoyer le message
               </button>
+
+              {/* Statut */}
+              {status && (
+                <p className="text-center text-sm font-medium text-slate-600">
+                  {status}
+                </p>
+              )}
 
             </form>
           </div>
