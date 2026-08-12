@@ -12,10 +12,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata = {
-  title: "Malick FAYE | Data Analyst",
+export const metadata: Metadata = {
+  title: "Malick FAYE | Data Analyst & Business Intelligence",
   description:
-    "Portfolio professionnel de Malick FAYE, Data Analyst spécialisé en Business Intelligence, SQL, Python et Machine Learning.",
+    "Portfolio professionnel de Malick FAYE, Data Analyst spécialisé en Business Intelligence, Power BI, SQL, Python et Machine Learning.",
+  keywords: [
+    "Malick FAYE",
+    "Data Analyst",
+    "Business Intelligence",
+    "Power BI",
+    "SQL",
+    "Python",
+    "Machine Learning",
+    "Data Analysis",
+  ],
+  authors: [
+    {
+      name: "Malick FAYE",
+    },
+  ],
+  creator: "Malick FAYE",
+  openGraph: {
+    title: "Malick FAYE | Data Analyst & Business Intelligence",
+    description:
+      "Portfolio professionnel de Malick FAYE, Data Analyst spécialisé en Business Intelligence, Power BI, SQL, Python et Machine Learning.",
+    type: "website",
+    locale: "fr_FR",
+  },
 };
 
 export default function RootLayout({
