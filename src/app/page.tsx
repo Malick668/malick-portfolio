@@ -8,6 +8,7 @@ import Education from "@/components/sections/Education";
 import CaseStudies from "@/components/sections/CaseStudies";
 import Contact from "@/components/sections/Contact";
 import Footer from "@/components/layout/Footer";
+import Certifications from "@/components/sections/Certifications";
 
 export default function Home() {
   return (
@@ -20,9 +21,10 @@ export default function Home() {
         <Skills />
         <Experience />
         <Education />
+        <Certifications />
         <Projects />
         <CaseStudies />
-        <Contact />
+        <Contact /> 
         <Footer />
       </main>
     </>
