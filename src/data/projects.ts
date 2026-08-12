@@ -3,7 +3,7 @@ export interface Project {
   title: string;
   category: string;
   description: string;
-  image: string|null;
+  image: string | null;
   technologies: string[];
   github: string | null;
   demo: string | null;
@@ -14,13 +14,18 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "Dashboard Power BI - Analyse des ventes",
+    title: "Adventure Works — Sales & Commercial Performance Dashboard",
     category: "Business Intelligence",
     description:
-      "Création d'un tableau de bord interactif permettant de suivre les ventes, les KPI et les performances commerciales.",
-    image: "/projects/powerbi-dashboard.png",
-    technologies: ["Power BI", "DAX", "SQL"],
-    github: null,
+      "Dashboard Power BI interactif dédié à l'analyse des performances commerciales d'Adventure Works : chiffre d'affaires, ventes, produits, territoires et performance des commerciaux.",
+    image: null,
+    technologies: [
+      "Power BI",
+      "DAX",
+      "Power Query",
+      "Data Modeling",
+    ],
+    github: "https://github.com/Malick668/Sales-Performance-Dashboard",
     demo: null,
     featured: true,
     date: "2026",
