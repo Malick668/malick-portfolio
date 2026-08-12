@@ -47,12 +47,12 @@ export default function Hero() {
           </a>
 
           <a
-            href="/cv.pdf"
-            download
-            className="rounded-lg border border-blue-600 px-8 py-4 font-semibold text-blue-600 transition hover:bg-blue-50"
-          >
-            Télécharger mon CV
-          </a>
+  href="/CV_Malick_FAYE.pdf"
+  download
+  className="rounded-lg border border-blue-600 px-8 py-4 font-semibold text-blue-600 transition hover:bg-blue-50"
+>
+  Télécharger mon CV
+</a>
         </div>
 
         {/* Technologies principales */}
