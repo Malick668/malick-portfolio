@@ -68,7 +68,7 @@ export default function ProjectCard({
         </div>
 
         {/* Boutons */}
-        {(project.github || project.demo) && (
+        {(project.github || project.linkedin || project.demo || project.report) && (
           <div className="mt-8 flex gap-4">
 
             {project.github && (
@@ -81,6 +81,28 @@ export default function ProjectCard({
                 GitHub
               </a>
             )}
+
+            {project.linkedin && (
+  <a
+    href={project.linkedin}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-xl border border-slate-300 px-5 py-2 font-medium text-slate-700 transition hover:bg-slate-100"
+  >
+    LinkedIn
+  </a>
+)}
+
+{project.report && (
+  <a
+    href={project.report}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="rounded-xl border border-slate-300 px-5 py-2 font-medium text-slate-700 transition hover:bg-slate-100"
+  >
+    Voir le rapport
+  </a>
+)}
 
             {project.demo && (
               <a

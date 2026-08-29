@@ -20,7 +20,7 @@ export const certifications: Certification[] = [
 
   {
     id: 2,
-    title: "Traitement des données — Niveau 1",
+    title: "Traitement des données - Niveau 1",
     organization: "FORCE-N",
     date: "Juillet 2024",
     description:
@@ -30,7 +30,7 @@ export const certifications: Certification[] = [
 
   {
     id: 3,
-    title: "Power BI — Formation complète",
+    title: "Power BI - Formation complète",
     organization: "Udemy",
     date: "28 juillet 2026",
     description:

@@ -34,4 +34,19 @@ export const education: Education[] = [
       "Développement d'applications de traitement de données.",
     ],
   },
+  {
+    id: 3,
+    institution: "Université Alioune Diop de Bambey",
+    degree:
+      "Licence professionnelle en Statistique et Informatique",
+    location: "Sénégal",
+    period: "2019 – 2023",
+    description: [
+      "Analyse statistique et modélisation.",
+      "Conception de bases de données.",
+      "Business Intelligence et reporting.",
+      "Statistique descriptive et inférentielle.",
+      "Développement d'applications de traitement de données.",
+    ],
+  },
 ];

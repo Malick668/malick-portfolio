@@ -10,14 +10,18 @@ export default function Hero() {
         <div className="mb-8">
           <span className="inline-flex items-center gap-2 rounded-full bg-green-100 px-4 py-2 text-sm font-medium text-green-700">
             <span className="h-3 w-3 rounded-full bg-green-500" />
-            Disponible pour une alternance
+            À la recherche d’un stage
           </span>
         </div>
 
-        {/* Avatar */}
-        <div className="mx-auto mb-8 flex h-40 w-40 items-center justify-center rounded-full bg-blue-100 text-6xl">
-          👨🏾‍💻
-        </div>
+        {/* Photo de profil */}
+<div className="mx-auto mb-8 h-40 w-40 overflow-hidden rounded-full border-4 border-white shadow-lg">
+  <img
+    src="/profile.jpeg"
+    alt="Malick FAYE"
+    className="h-full w-full object-cover"
+  />
+</div>
 
         {/* Nom */}
         <h1 className="mb-4 text-5xl font-extrabold text-gray-900 md:text-6xl">
@@ -31,11 +35,11 @@ export default function Hero() {
 
         {/* Description */}
         <p className="mx-auto mb-10 max-w-3xl text-lg leading-8 text-gray-600 md:text-xl">
-          Je transforme les données en informations exploitables grâce
-          à l&apos;analyse statistique, la Business Intelligence et le
-          Machine Learning afin d&apos;aider les entreprises à prendre de
-          meilleures décisions.
-        </p>
+  Étudiant en Master 2 Ingénierie Mathématique pour la Science des Données,
+  je recherche un stage en Data Analysis, Business Intelligence ou Data Science.
+  Je mets à profit mes compétences en analyse statistique, Python, SQL, Power BI
+  et Machine Learning pour transformer les données en informations utiles à la décision.
+</p>
 
         {/* Boutons */}
         <div className="flex flex-col justify-center gap-4 sm:flex-row">
