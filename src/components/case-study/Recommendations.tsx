@@ -15,9 +15,9 @@ export default function Recommendations({
           Perspectives
         </p>
 
-        <h2 className="mt-3 text-3xl font-bold text-slate-900">
+        <h3 className="mt-3 text-3xl font-bold text-slate-900">
           Recommandations
-        </h2>
+        </h3>
 
         <p className="mt-5 text-lg leading-8 text-slate-600">
           Les résultats de cette étude permettent de formuler plusieurs

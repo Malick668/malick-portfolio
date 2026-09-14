@@ -9,13 +9,23 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
-    id: 1,
-    title: "Data Analysis",
-    organization: "FORCE-N",
-    date: "Mars 2024",
+    id: 4,
+    title: "Introduction to Programming with Python",
+    organization: "Harvard University - CS50",
+    date: "2026",
     description:
-      "Certification en Data Analysis délivrée dans le cadre du programme FORCE-N.",
-    certificateUrl: "/certificates/data-analysis-force-n.pdf",
+      "Certification obtenue après avoir terminé CS50's Introduction to Programming with Python, comprenant neuf problem sets et un projet final.",
+    certificateUrl: "/certificates/cs50-python-2026.png",
+  },
+
+  {
+    id: 3,
+    title: "Power BI - Formation complète",
+    organization: "Udemy",
+    date: "28 juillet 2026",
+    description:
+      "Formation complète Power BI d'une durée de 33,5 heures.",
+    certificateUrl: "/certificates/power-bi-formation-udemy.pdf",
   },
 
   {
@@ -29,12 +39,12 @@ export const certifications: Certification[] = [
   },
 
   {
-    id: 3,
-    title: "Power BI - Formation complète",
-    organization: "Udemy",
-    date: "28 juillet 2026",
+    id: 1,
+    title: "Data Analysis",
+    organization: "FORCE-N",
+    date: "Mars 2024",
     description:
-      "Formation complète Power BI d'une durée de 33,5 heures.",
-    certificateUrl: "/certificates/power-bi-formation-udemy.pdf",
+      "Certification en Data Analysis délivrée dans le cadre du programme FORCE-N.",
+    certificateUrl: "/certificates/data-analysis-force-n.pdf",
   },
 ];

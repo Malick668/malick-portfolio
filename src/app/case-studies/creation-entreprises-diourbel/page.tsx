@@ -153,9 +153,9 @@ export default function CaseStudyPage() {
     Méthodologie
   </p>
 
-  <h2 className="mt-4 text-4xl font-bold text-slate-900">
+  <h4 className="mt-4 text-4xl font-bold text-slate-900">
     De la donnée à l'analyse
-  </h2>
+  </h4>
 
   <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-600">
     L'analyse a suivi une démarche structurée allant de la préparation des
@@ -234,9 +234,9 @@ export default function CaseStudyPage() {
     Conclusion
   </p>
 
-  <h2 className="mt-4 text-4xl font-bold text-slate-900">
+  <h3 className="mt-4 text-4xl font-bold text-slate-900">
     Une analyse statistique au service de la décision
-  </h2>
+  </h3>
 
   <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-600">
     Cette étude a permis de mettre en évidence plusieurs caractéristiques

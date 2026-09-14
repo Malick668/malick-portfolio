@@ -12,9 +12,9 @@ export default function Projects() {
             Projets
           </p>
 
-          <h2 className="mt-2 text-4xl font-bold text-slate-900">
+          <h3 className="mt-2 text-4xl font-bold text-slate-900">
             Quelques réalisations
-          </h2>
+          </h3>
 
           <p className="mt-4 text-lg leading-8 text-slate-600">
             Découvrez quelques projets que j&apos;ai réalisés en Data Analysis,

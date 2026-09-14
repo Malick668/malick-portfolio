@@ -63,8 +63,8 @@ export const projects: Project[] = [
     category: "Data Engineering",
     description:
       "Application web permettant d'interagir avec une base MySQL : ajout, modification, suppression et consultation des données.",
-    image: null,
-    technologies: ["Python", "Streamlit", "MySQL"],
+    image:"/projects/streamlit-mysql.png",
+    technologies: ["Python", "Streamlit", "MySQL", "SQL"],
     github: null,
     linkedin: null,
     demo: null,

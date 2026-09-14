@@ -10,9 +10,9 @@ export default function Certifications() {
             Certifications
           </p>
 
-          <h2 className="mt-2 text-4xl font-bold text-slate-900">
+          <h3 className="mt-2 text-4xl font-bold text-slate-900">
             Certifications & formations
-          </h2>
+          </h3>
 
           <p className="mt-4 text-lg leading-8 text-slate-600">
             Quelques certifications et formations qui complètent mon parcours

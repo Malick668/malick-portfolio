@@ -44,9 +44,9 @@ export default function Results() {
         </p>
       </div>
 
-      <h2 className="mt-4 text-4xl font-bold text-slate-900">
+      <h4 className="mt-4 text-4xl font-bold text-slate-900">
         Résultats clés
-      </h2>
+      </h4>
 
       <p className="mt-6 max-w-4xl text-lg leading-8 text-slate-600">
         Les principaux résultats obtenus à partir des analyses statistiques
